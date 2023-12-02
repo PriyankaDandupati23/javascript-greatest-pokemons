@@ -1,8 +1,28 @@
+import pokemons from './data'
 // Iteration 1: All Fire Pokemons- get the array of all Fire type pokemons
+function getAllFirePokemons(Array) {
+    let d = [];
+    d = Array.type =="Fire";
+    return d
+}
+let res = pokemons.filter(getAllFirePokemons);
+console.log(res);
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 // Iteration 2: Shortest Pokemon- find the `name` of the shortest pokemon
+function shortestPokemon(ar){                                
+    return ar.reduce((x,y) => {
+      if(x== undefined || y.length< x.length) {
+        x = y;
+      }
+      return x;
+    } , undefined);                                 
+}
+let al= shortestPokemon(pokemon);
+console.log(al);
+//-------------------------------------------------------------------------------------------------------------------------------------------
 
-// Iteration 3: candy_count average - average of `candy_count` for all the pokemons
+// Iteration 3: candy_count average - average of `candy_count` for all the pokemons  
 
 // Iteration 4: images for the first 10 `Ground`  Pokemons
 
